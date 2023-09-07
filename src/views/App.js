@@ -8,6 +8,7 @@ import MyComponent from './Example/MyComponent.js'
  */
 
 function App() {
+  // const App = () => {
   return (
     <div className="App">
       <header className="App-header">
