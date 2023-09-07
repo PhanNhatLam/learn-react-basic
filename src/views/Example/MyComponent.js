@@ -7,11 +7,19 @@ class MyComponent extends React.Component {
         age: 24
     }
 
+    handleOnChangeName = (event) => {
+        this.setState({
+            name: event.target.value
+        })
+    }
+
     render() {
 
         return (
             <>
                 <div className="first">
+                    <input value={this.state.name} type="text"
+                        onChange={(event) => this.handleOnChangeName(event)} />
                     Hello, my name is {this.state.name}
                 </div>
                 <div className="second">
